@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/b790a08ace.js"></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container flex-center">
+        <header class="header">
+            <h2>Password Generator</h2>
+        </header>
+
+        <div class="password-generator flex-center">
+            <div class="password-attributes flex-center">
+                <div class="flex-center">
+                    <p>Password Length:</p>
+                    <div class="flex-center">
+                        <span class="min-range"></span>
+                        <input type="range" name="char-range" id="char-range" class="char-range slider">
+                        <output for="char-range" onforminput="value = char-range.valueAsNumber;"></output>
+                        <span class="max-range"></span>
+                    </div>
+                </div>
+            </div>
+            <button class="generate-password">Generate</button>
+            <span class="your-password">Your random password:</span>
+            <textarea name="password-output" id="password-output"  class="password-output" cols="90" rows="1"></textarea>
+        </div>
+
+        <footer class="footer flex-center">
+            <div class="flex-center">
+                <p>Designed by: <strong>Karthik S Kumar &copy; 2021 </strong></p>
+                <section class="my-links flex-center">
+                    <p>My Link(s): </p>
+                    <article class="flex-center">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <a href="#" class="github-page">Github</a>
+                    </article>
+                </section>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
